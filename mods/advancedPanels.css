@@ -25,12 +25,17 @@
 /*
 * CSS For Sessions Panel
 */
+#sessions_lonm .sortselector {
+    margin: 2px 8px;
+}
+
 #sessions_lonm .sessionslist li {
     display: flex;
     flex-direction: row;
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-left: 8px
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #sessions_lonm .sessionslist li div {
@@ -61,8 +66,17 @@
     color: var(--colorHighlightFg);
 }
 
+#sessions_lonm li {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    border-radius: 5px;
+}
+
 #sessions_lonm li button {
+    margin-left: 4px;
     display: none;
+    color: black;
 }
 #sessions_lonm li.selected button {
     display: block;
@@ -71,6 +85,7 @@
 #sessions_lonm .sortselector-button {
     display: none;
 }
+
 #sessions_lonm .sortselector-button.selected {
     display: block;
 }
@@ -86,7 +101,7 @@
     position: relative;
     left: -5.5px;
 }
-#sessions_lonm .modal-container{
+#sessions_lonm .modal-container {
     display: none;
 }
 
@@ -135,6 +150,7 @@
 
 
 #sessions_lonm .newSession {
+    margin: 0 4px;
     padding: 4px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,6 +160,7 @@
 }
 
 #sessions_lonm .newSession h2,
+#sessions_lonm .add-session,
 #sessions_lonm .newSession input[type="text"]{
     grid-column: 1/3;
 }
